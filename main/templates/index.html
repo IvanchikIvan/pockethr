@@ -1,0 +1,41 @@
+{% extends 'base_generic.html' %}
+{% block title %}
+  Главная
+{% endblock %}
+{% load static %}
+{% block styles %}
+  <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+{% endblock %}
+{% block content %}
+  <div>
+    <div class="main__container">
+      <div class="menu__column">
+        <div class="column__container">
+          <div class="menu__item">
+            <div class="item__name">
+              <p>My Account</p>
+            </div>
+          </div>
+          <div class="menu__item">
+            <div class="item__name">
+              <p>Networking</p>
+            </div>
+          </div>
+          <div class="menu__item">
+            <div class="item__name">
+              <p>Job Search</p>
+            </div>
+          </div>
+          <div class="menu__item">
+            <div class="item__name">
+              <p>My Clients</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main__icon">
+        <img src="{% static 'assets/mainpage.png' %}" />
+      </div>
+    </div>
+  </div>
+{% endblock %}
